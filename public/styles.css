@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+  color: #f3f4f6;
+  line-height: 1.5;
+  padding: 24px;
+}
+
+.app-header {
+  max-width: 960px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #2e2e2e;
+  padding-bottom: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #3f3f46;
+  background-color: #141414;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.item-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #262626;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.item-todo-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.item-todo-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-info small {
+  color: #9ca3af;
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}

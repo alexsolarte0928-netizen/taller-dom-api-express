@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Tareas y Contactos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Tareas y Contactos</h1>
+    <p class="subtitle">API Express + DOM en tiempo real</p>
+  </header>
+
+  <main class="container">
+    <!-- Sección de Tareas -->
+    <section class="card" aria-labelledby="todos-title">
+      <h2 id="todos-title">Lista de Tareas</h2>
+
+      <form id="todo-form" class="form-row">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Nueva tarea..."
+          required
+        />
+        <button type="submit">Agregar</button>
+      </form>
+
+      <ul id="todo-list" class="item-list"></ul>
+    </section>
+
+    <!-- Sección de Contactos -->
+    <section class="card" aria-labelledby="contacts-title">
+      <h2 id="contacts-title">Lista de Contactos</h2>
+
+      <form id="contact-form" class="form-grid">
+        <input
+          type="text"
+          id="contact-name"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="text"
+          id="contact-phone"
+          placeholder="Teléfono"
+          required
+        />
+        <input
+          type="email"
+          id="contact-email"
+          placeholder="Correo electrónico"
+          required
+        />
+        <button type="submit">Guardar contacto</button>
+      </form>
+
+      <ul id="contact-list" class="item-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
